@@ -1,0 +1,26 @@
+digraph "Briscola.cc"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Briscola.cc",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="allegro5/allegro.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="allegro5/allegro_primitives.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="allegro5/allegro_font.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="allegro5/allegro_ttf.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="allegro5/allegro_image.h",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="strutt_dati.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$strutt__dati_8h.html",tooltip="Header file contenente le dichiarazioni della struttura dati comune. "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="cassert",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="grafica_debug.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$grafica__debug_8h.html",tooltip="Header file contenente l&#39;interfaccia dei moduli Debug e Grafica. "];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="gestione_gioco.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$gestione__gioco_8h.html",tooltip="Header file contenente l&#39;interfaccia del modulo Gestione gioco. "];
+}

@@ -1,0 +1,948 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Briscola: Riferimenti per il file gestione_gioco.cc</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Briscola
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funzioni</a>  </div>
+  <div class="headertitle">
+<div class="title">Riferimenti per il file gestione_gioco.cc</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>File contenente il modulo Gestione gioco.  
+<a href="#details">Continua...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &lt;allegro5/allegro.h&gt;</code><br />
+<code>#include &lt;allegro5/allegro_font.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="strutt__dati_8h_source.html">strutt_dati.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="grafica__debug_8h_source.html">grafica_debug.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IA_8h_source.html">IA.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Grafo delle dipendenze di inclusione per gestione_gioco.cc:</div>
+<div class="dyncontent">
+<div class="center"><img src="gestione__gioco_8cc__incl.png" border="0" usemap="#gestione__gioco_8cc" alt=""/></div>
+<map name="gestione__gioco_8cc" id="gestione__gioco_8cc">
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funzioni</h2></td></tr>
+<tr class="memitem:a24b6a4f9f560c7f053e283d6b0693108"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#a24b6a4f9f560c7f053e283d6b0693108">inizializza_giocatore</a> (<a class="el" href="structgiocatore.html">giocatore</a> &amp;g1, const char nome_giocatore[], bool u)</td></tr>
+<tr class="memdesc:a24b6a4f9f560c7f053e283d6b0693108"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inizializzazione della struttura giocatore.  <a href="#a24b6a4f9f560c7f053e283d6b0693108">Continua...</a><br /></td></tr>
+<tr class="separator:a24b6a4f9f560c7f053e283d6b0693108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93fcff33d95cf1362e2e656c502ac65a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#a93fcff33d95cf1362e2e656c502ac65a">inizializza_mazzo</a> (<a class="el" href="structmazzo.html">mazzo</a> &amp;m)</td></tr>
+<tr class="memdesc:a93fcff33d95cf1362e2e656c502ac65a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inizializzazione mazzo.  <a href="#a93fcff33d95cf1362e2e656c502ac65a">Continua...</a><br /></td></tr>
+<tr class="separator:a93fcff33d95cf1362e2e656c502ac65a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5de1158d18cf4120c4d735954933b8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#aeb5de1158d18cf4120c4d735954933b8">mescola_mazzo</a> (<a class="el" href="structmazzo.html">mazzo</a> &amp;m)</td></tr>
+<tr class="memdesc:aeb5de1158d18cf4120c4d735954933b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione per mescolare il mazzo in maniera pseudo-casuale.  <a href="#aeb5de1158d18cf4120c4d735954933b8">Continua...</a><br /></td></tr>
+<tr class="separator:aeb5de1158d18cf4120c4d735954933b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a95ee86b363ad7347e8a85b92fcc8a5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a> (<a class="el" href="structmazzo.html">mazzo</a> &amp;mano, <a class="el" href="structmazzo.html">mazzo</a> &amp;m)</td></tr>
+<tr class="memdesc:a0a95ee86b363ad7347e8a85b92fcc8a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione per pescare dal mazzo.  <a href="#a0a95ee86b363ad7347e8a85b92fcc8a5">Continua...</a><br /></td></tr>
+<tr class="separator:a0a95ee86b363ad7347e8a85b92fcc8a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9058cd2b50d777d75040db7f4c8fee"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#a9c9058cd2b50d777d75040db7f4c8fee">estrai_carta</a> (<a class="el" href="structmazzo.html">mazzo</a> &amp;mano, const int indice)</td></tr>
+<tr class="memdesc:a9c9058cd2b50d777d75040db7f4c8fee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funzione per estrarre una carta dalla mano.  <a href="#a9c9058cd2b50d777d75040db7f4c8fee">Continua...</a><br /></td></tr>
+<tr class="separator:a9c9058cd2b50d777d75040db7f4c8fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaecec29c6fa398991693324bfdeb687"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#adaecec29c6fa398991693324bfdeb687">scegli_carta_p1</a> (const <a class="el" href="structmazzo.html">mazzo</a> &amp;mano, int &amp;idx, ALLEGRO_DISPLAY *display)</td></tr>
+<tr class="memdesc:adaecec29c6fa398991693324bfdeb687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scelta della carta da parte dell'utente.  <a href="#adaecec29c6fa398991693324bfdeb687">Continua...</a><br /></td></tr>
+<tr class="separator:adaecec29c6fa398991693324bfdeb687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a1ba2fe8a4e4dda012fe5a6b20b8966"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#a5a1ba2fe8a4e4dda012fe5a6b20b8966">attribuisci_punti</a> (const int scelta_p1, const int scelta_p2, <a class="el" href="structgiocatore.html">giocatore</a> *p1, <a class="el" href="structgiocatore.html">giocatore</a> *p2, const <a class="el" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a> briscola)</td></tr>
+<tr class="memdesc:a5a1ba2fe8a4e4dda012fe5a6b20b8966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attribuisce i punti al vincitore della mano.  <a href="#a5a1ba2fe8a4e4dda012fe5a6b20b8966">Continua...</a><br /></td></tr>
+<tr class="separator:a5a1ba2fe8a4e4dda012fe5a6b20b8966"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac252ff024effc9ac82d3b299f1701d77"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#ac252ff024effc9ac82d3b299f1701d77">setta_coordinate_carte</a> (<a class="el" href="structmazzo.html">mazzo</a> &amp;mano_g1, <a class="el" href="structmazzo.html">mazzo</a> &amp;mano_cpu)</td></tr>
+<tr class="memdesc:ac252ff024effc9ac82d3b299f1701d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setta le coordinate delle carte in mano ai giocatori.  <a href="#ac252ff024effc9ac82d3b299f1701d77">Continua...</a><br /></td></tr>
+<tr class="separator:ac252ff024effc9ac82d3b299f1701d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10533e92f83a3fb27e85f4e067c38901"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gestione__gioco_8cc.html#a10533e92f83a3fb27e85f4e067c38901">start_game</a> (<a class="el" href="structgiocatore.html">giocatore</a> &amp;g1, <a class="el" href="structgiocatore.html">giocatore</a> &amp;cpu, ALLEGRO_DISPLAY *display)</td></tr>
+<tr class="memdesc:a10533e92f83a3fb27e85f4e067c38901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementazione del ciclo di gioco.  <a href="#a10533e92f83a3fb27e85f4e067c38901">Continua...</a><br /></td></tr>
+<tr class="separator:a10533e92f83a3fb27e85f4e067c38901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrizione dettagliata</h2>
+<div class="textblock"><p>File contenente il modulo Gestione gioco. </p>
+</div><h2 class="groupheader">Documentazione delle funzioni</h2>
+<a class="anchor" id="a5a1ba2fe8a4e4dda012fe5a6b20b8966"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void attribuisci_punti </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>scelta_p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>scelta_p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgiocatore.html">giocatore</a> *&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgiocatore.html">giocatore</a> *&#160;</td>
+          <td class="paramname"><em>p2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a>&#160;</td>
+          <td class="paramname"><em>briscola</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attribuisce i punti al vincitore della mano. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scelta_p1</td><td>Indice della carta scelta dal giocatore che ha giocato per primo </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scelta_p2</td><td>Indice della carta scelta dal giocatore che ha giocato per secondo </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p1</td><td>Giocatore che ha giocato per primo </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p2</td><td>Giocatore che ha giocato per secondo </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">briscola</td><td>Il seme che nella partita determina la briscola</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La funzione prende in ingresso indici e mani dei giocatori e determina il vincitore in base alle regole, aggiornando la sua ultima presa e il suo punteggio </p>
+<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;{</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    assert((p1 != NULL) &amp;&amp; (p2 != NULL)) ;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <a class="code" href="structcarta.html">carta</a> carta_p1 = p1-&gt;<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[scelta_p1],</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        carta_p2 = p2-&gt;<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[scelta_p2] ;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <a class="code" href="structgiocatore.html">giocatore</a>* vincitore = NULL ;</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keywordflow">if</span>(carta_p1.<a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a> == briscola) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        <span class="keywordflow">if</span>(carta_p2.seme == briscola) {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">if</span>(&amp;carta_p1==<a class="code" href="IA_8cc.html#affd46d517819468c524ce36d8c73d871">confronta_valori</a>(&amp;carta_p1, &amp;carta_p2))</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                vincitore = p1 ;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                vincitore = p2 ;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            vincitore = p1 ;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(carta_p2.seme == briscola) {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        vincitore = p2 ;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <span class="keywordflow">if</span>(carta_p1.<a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a> != carta_p2.seme)</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            vincitore = p1 ;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">if</span>(&amp;carta_p1==<a class="code" href="IA_8cc.html#affd46d517819468c524ce36d8c73d871">confronta_valori</a>(&amp;carta_p1, &amp;carta_p2))</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                vincitore = p1 ;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                vincitore = p2 ;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    </div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    assert(vincitore != NULL) ;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;vincitore-&gt;<a class="code" href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">nome</a>&lt;&lt;<span class="stringliteral">&quot; prende!&quot;</span>&lt;&lt;endl&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    p1-&gt;<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a> = p2-&gt;<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a> = false ;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    vincitore-&gt;<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a> = true ;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    vincitore-&gt;<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a> += (carta_p1.<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a>+carta_p2.punteggio) ;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="ttc" id="structcarta_html_a21f8d34da41412e830ec1355c359cd25"><div class="ttname"><a href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">carta::seme</a></div><div class="ttdeci">semi seme</div><div class="ttdoc">Seme della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:58</div></div>
+<div class="ttc" id="structcarta_html_ae7bfc8644523c3dae0b8506dbe676242"><div class="ttname"><a href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">carta::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdoc">Punteggio della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:60</div></div>
+<div class="ttc" id="structgiocatore_html_a3d7cca54c781be0ba6b258b0dfd4c6de"><div class="ttname"><a href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">giocatore::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:92</div></div>
+<div class="ttc" id="structcarta_html"><div class="ttname"><a href="structcarta.html">carta</a></div><div class="ttdoc">Struttura della singola carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:57</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="structgiocatore_html_a9d581c75b5bcebfa0a2dfa5b11f75cbd"><div class="ttname"><a href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">giocatore::nome</a></div><div class="ttdeci">char nome[4]</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:90</div></div>
+<div class="ttc" id="structgiocatore_html_acaec9a044006ae41257c0a9333643815"><div class="ttname"><a href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">giocatore::mano</a></div><div class="ttdeci">mazzo mano</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:91</div></div>
+<div class="ttc" id="IA_8cc_html_affd46d517819468c524ce36d8c73d871"><div class="ttname"><a href="IA_8cc.html#affd46d517819468c524ce36d8c73d871">confronta_valori</a></div><div class="ttdeci">carta * confronta_valori(carta *carta_p1, carta *carta_p2)</div><div class="ttdoc">Confronta due carte dello stesso seme e ritorna quella che vince la mano. </div><div class="ttdef"><b>Definition:</b> IA.cc:48</div></div>
+<div class="ttc" id="structgiocatore_html_ad3593e6e52d7ec2d6158fafcdefa177f"><div class="ttname"><a href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">giocatore::ultima_presa</a></div><div class="ttdeci">bool ultima_presa</div><div class="ttdoc">Booleano di supporto alla funizione start_game, indica se il giocatore ha vinto l&#39;ultima mano...</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:93</div></div>
+<div class="ttc" id="structgiocatore_html"><div class="ttname"><a href="structgiocatore.html">giocatore</a></div><div class="ttdoc">Struttura per descrivere un giocatore. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:89</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a330bea9b36f638349fec0d06c8ab4c38"><div class="ttname"><a href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a></div><div class="ttdeci">#define D1(a)</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a9c9058cd2b50d777d75040db7f4c8fee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void estrai_carta </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>mano</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>indice</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funzione per estrarre una carta dalla mano. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mano</td><td>Mano da cui estrarre la carta </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">indice</td><td>Indice dell'array di carte corrispondente alla carta giocata</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>L'operazione di estrazione della carta consiste semplicemente nello spostare le carte successive una posizione indietro, riducendo di uno il numero di carte nella mano. </p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    assert(mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL) ;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    assert(mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> &gt; 0 &amp;&amp; (indice &gt;= 0 &amp;&amp; indice &lt; mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>)) ;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=indice; i&lt;mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> -1; i++)</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i] = mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i+1] ;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>-- ;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a24b6a4f9f560c7f053e283d6b0693108"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inizializza_giocatore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgiocatore.html">giocatore</a> &amp;&#160;</td>
+          <td class="paramname"><em>g1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>nome_giocatore</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>u</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inizializzazione della struttura giocatore. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">g1</td><td>Giocatore da inizializzare </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nome_giocatore</td><td>Nome del giocatore da assegnare a g1 </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>Mi dice se g1 è l'utente o la cpu.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Viene invocata nel main per inizializzare i 2 giocatori (utente e CPU) prima dell'avvio del gioco.</p>
+<dl class="section see"><dt>Si veda anche</dt><dd><a class="el" href="Briscola_8cc.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Inizializza la libreria Allegro 5 e alcune variabili del programma, disegna la schermata iniziale e...">main</a> per vedere il codice in cui viene invocata, <a class="el" href="structgiocatore.html" title="Struttura per descrivere un giocatore. ">giocatore</a> per vedere i campi della struttura. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    strcpy(g1.<a class="code" href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">nome</a>, nome_giocatore) ;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> = 0 ;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> == NULL)</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> = <span class="keyword">new</span> <a class="code" href="structcarta.html">carta</a>[<a class="code" href="Briscola_8cc.html#a9fc4d5018c6ea43ca79b5ea17d937b32">NUM_CARTE_MANO</a>] ;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a> = 0 ;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    g1.<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a> = false ;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    g1.<a class="code" href="structgiocatore.html#ada47a0d73f68302e7b14b387ae7eea50">utente</a> = u ;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    g1.<a class="code" href="structgiocatore.html#af2699ec110179123a94c4cc4af349564">x_giocata</a> = g1.<a class="code" href="structgiocatore.html#ada47a0d73f68302e7b14b387ae7eea50">utente</a> ? <a class="code" href="Briscola_8cc.html#a1d6d99cde53f302a0be0dc01fcc7f4ce">X_GIOCATA_G1</a> : <a class="code" href="Briscola_8cc.html#ae222434adb63e6bf7b36df2d9e3cf80e">X_GIOCATA_CPU</a> ;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    g1.<a class="code" href="structgiocatore.html#a29c0a92dab16dccdca6ebc19d2e244cd">y_giocata</a> = <a class="code" href="Briscola_8cc.html#adf9d163911c930606a9e68c3e798ebec">y_centro</a> - <a class="code" href="Briscola_8cc.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a>/2 ;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="ttc" id="Briscola_8cc_html_ae222434adb63e6bf7b36df2d9e3cf80e"><div class="ttname"><a href="Briscola_8cc.html#ae222434adb63e6bf7b36df2d9e3cf80e">X_GIOCATA_CPU</a></div><div class="ttdeci">const int X_GIOCATA_CPU</div><div class="ttdef"><b>Definition:</b> Briscola.cc:60</div></div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="structgiocatore_html_a3d7cca54c781be0ba6b258b0dfd4c6de"><div class="ttname"><a href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">giocatore::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:92</div></div>
+<div class="ttc" id="Briscola_8cc_html_a1d6d99cde53f302a0be0dc01fcc7f4ce"><div class="ttname"><a href="Briscola_8cc.html#a1d6d99cde53f302a0be0dc01fcc7f4ce">X_GIOCATA_G1</a></div><div class="ttdeci">const int X_GIOCATA_G1</div><div class="ttdoc">Coordinate x delle posizioni in cui verranno giocate le carte dell&#39;utente e della CPU...</div><div class="ttdef"><b>Definition:</b> Briscola.cc:59</div></div>
+<div class="ttc" id="structgiocatore_html_ada47a0d73f68302e7b14b387ae7eea50"><div class="ttname"><a href="structgiocatore.html#ada47a0d73f68302e7b14b387ae7eea50">giocatore::utente</a></div><div class="ttdeci">bool utente</div><div class="ttdoc">Indica se il giocatore è comandato dall&#39;utente o dall&#39;IA. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:96</div></div>
+<div class="ttc" id="Briscola_8cc_html_ab65e425b405b63d85efa88fc0ed7cd87"><div class="ttname"><a href="Briscola_8cc.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a></div><div class="ttdeci">int imagesHeight</div><div class="ttdoc">Altezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+<div class="ttc" id="structcarta_html"><div class="ttname"><a href="structcarta.html">carta</a></div><div class="ttdoc">Struttura della singola carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:57</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="structgiocatore_html_a29c0a92dab16dccdca6ebc19d2e244cd"><div class="ttname"><a href="structgiocatore.html#a29c0a92dab16dccdca6ebc19d2e244cd">giocatore::y_giocata</a></div><div class="ttdeci">int y_giocata</div><div class="ttdoc">Coordinate x e y del punto del campo di gioco in cui le carte del giocatore devono essere giocate...</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:99</div></div>
+<div class="ttc" id="Briscola_8cc_html_adf9d163911c930606a9e68c3e798ebec"><div class="ttname"><a href="Briscola_8cc.html#adf9d163911c930606a9e68c3e798ebec">y_centro</a></div><div class="ttdeci">const int y_centro</div><div class="ttdoc">Coordinata y del centro della schermata. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:44</div></div>
+<div class="ttc" id="structgiocatore_html_a9d581c75b5bcebfa0a2dfa5b11f75cbd"><div class="ttname"><a href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">giocatore::nome</a></div><div class="ttdeci">char nome[4]</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:90</div></div>
+<div class="ttc" id="structgiocatore_html_af2699ec110179123a94c4cc4af349564"><div class="ttname"><a href="structgiocatore.html#af2699ec110179123a94c4cc4af349564">giocatore::x_giocata</a></div><div class="ttdeci">int x_giocata</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:99</div></div>
+<div class="ttc" id="structgiocatore_html_acaec9a044006ae41257c0a9333643815"><div class="ttname"><a href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">giocatore::mano</a></div><div class="ttdeci">mazzo mano</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:91</div></div>
+<div class="ttc" id="structgiocatore_html_ad3593e6e52d7ec2d6158fafcdefa177f"><div class="ttname"><a href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">giocatore::ultima_presa</a></div><div class="ttdeci">bool ultima_presa</div><div class="ttdoc">Booleano di supporto alla funizione start_game, indica se il giocatore ha vinto l&#39;ultima mano...</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:93</div></div>
+<div class="ttc" id="Briscola_8cc_html_a9fc4d5018c6ea43ca79b5ea17d937b32"><div class="ttname"><a href="Briscola_8cc.html#a9fc4d5018c6ea43ca79b5ea17d937b32">NUM_CARTE_MANO</a></div><div class="ttdeci">const int NUM_CARTE_MANO</div><div class="ttdoc">Numero massimo delle carte nella mano di un giocatore. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a93fcff33d95cf1362e2e656c502ac65a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void inizializza_mazzo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Inizializzazione mazzo. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>Mazzo da inizializzare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>Si veda anche</dt><dd><a class="el" href="structmazzo.html" title="Descrittore del mazzo. ">mazzo</a>, <a class="el" href="gestione__gioco_8cc.html#a10533e92f83a3fb27e85f4e067c38901" title="Implementazione del ciclo di gioco. ">start_game</a> per il suo utilizzo. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> = <a class="code" href="Briscola_8cc.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a> ;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span>(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>!=NULL)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> = <span class="keyword">new</span> <a class="code" href="structcarta.html">carta</a>[m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>] ;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span> idx=0 ;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=1; j&lt;=10; j++) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;4; i++, idx++) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a761de9c1928084edf4a75d0e55146652">numero</a>=j ;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a>=(<a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a>)i ;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">presa</a>=false ;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a3731ab6042e322500e1abd4cbbd7e92e">giocata</a>=false ;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">switch</span>(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a761de9c1928084edf4a75d0e55146652">numero</a>) {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keywordflow">case</span> 1: m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> = 11 ; break ;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keywordflow">case</span> 3: m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> = 10 ; break ;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordflow">case</span> 8: m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> = 2 ; break ;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                <span class="keywordflow">case</span> 9: m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> = 3 ; break ;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordflow">case</span> 10: m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> = 4 ; break ;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <span class="keywordflow">default</span>: m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> = 0 ; break ;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="comment">/*Deduco nome file .bmp contenente la carta*/</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">char</span> nome[] = <span class="stringliteral">&quot;data/0d.png&quot;</span> ;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            nome[5] = <span class="charliteral">&#39;0&#39;</span> + (m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a761de9c1928084edf4a75d0e55146652">numero</a> % 10) ;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">switch</span>(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a>) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a9b01b11abd699c4992b9366c2b2b5f69">DENARI</a>: nome[6] = <span class="charliteral">&#39;d&#39;</span> ; break ;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83ab54e5dd571f6a8cf5bde9f982382a358">COPPE</a>: nome[6] = <span class="charliteral">&#39;c&#39;</span> ; break ;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a43f03efdeb029f8140a3739da5a6e47a">BASTONI</a>: nome[6] = <span class="charliteral">&#39;b&#39;</span> ; break ;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">case</span> <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d">SPADE</a>: nome[6] = <span class="charliteral">&#39;s&#39;</span> ; break ;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">img</a> = al_load_bitmap(nome) ;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="strutt__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(<a class="code" href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a>(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>, m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>)) ;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="ttc" id="structcarta_html_a21f8d34da41412e830ec1355c359cd25"><div class="ttname"><a href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">carta::seme</a></div><div class="ttdeci">semi seme</div><div class="ttdoc">Seme della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:58</div></div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="structcarta_html_ae7bfc8644523c3dae0b8506dbe676242"><div class="ttname"><a href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">carta::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdoc">Punteggio della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:60</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_a9e8a5b20697e9aa9510b74081f2d4230"><div class="ttname"><a href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a></div><div class="ttdeci">void stampa_mazzo(carta *m, const int n_carte)</div><div class="ttdoc">Stampa informazioni di tutte le carte del mazzo. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:41</div></div>
+<div class="ttc" id="structcarta_html"><div class="ttname"><a href="structcarta.html">carta</a></div><div class="ttdoc">Struttura della singola carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:57</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a975397c373ae2a9dc28d0297fa18da56"><div class="ttname"><a href="strutt__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a></div><div class="ttdeci">#define D2(a)</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:23</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83ab54e5dd571f6a8cf5bde9f982382a358"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83ab54e5dd571f6a8cf5bde9f982382a358">COPPE</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a></div><div class="ttdeci">semi</div><div class="ttdoc">Tipo seme delle carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="structcarta_html_a532a8a4de8cd855924305e845f8084d1"><div class="ttname"><a href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">carta::presa</a></div><div class="ttdeci">bool presa</div><div class="ttdoc">Booleano di supporto alla funzione mescola_mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:61</div></div>
+<div class="ttc" id="Briscola_8cc_html_a1589e772367474f29ad75d55dfa09983"><div class="ttname"><a href="Briscola_8cc.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a></div><div class="ttdeci">const int NUM_CARTE_MAZZO</div><div class="ttdoc">Numero massimo delle carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:38</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83a43f03efdeb029f8140a3739da5a6e47a"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a43f03efdeb029f8140a3739da5a6e47a">BASTONI</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="structcarta_html_a6cddeb1efe63b74ab9b554a167987ebd"><div class="ttname"><a href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">carta::img</a></div><div class="ttdeci">ALLEGRO_BITMAP * img</div><div class="ttdoc">Campo contenente l&#39;immagine della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:68</div></div>
+<div class="ttc" id="structcarta_html_a3731ab6042e322500e1abd4cbbd7e92e"><div class="ttname"><a href="structcarta.html#a3731ab6042e322500e1abd4cbbd7e92e">carta::giocata</a></div><div class="ttdeci">bool giocata</div><div class="ttdoc">Booleano di supporto alla funzione disegna_tavolo_gioco. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:62</div></div>
+<div class="ttc" id="structcarta_html_a761de9c1928084edf4a75d0e55146652"><div class="ttname"><a href="structcarta.html#a761de9c1928084edf4a75d0e55146652">carta::numero</a></div><div class="ttdeci">int numero</div><div class="ttdoc">Numero della carta, da 1 a 10. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:59</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d">SPADE</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83a9b01b11abd699c4992b9366c2b2b5f69"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a9b01b11abd699c4992b9366c2b2b5f69">DENARI</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aeb5de1158d18cf4120c4d735954933b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void mescola_mazzo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funzione per mescolare il mazzo in maniera pseudo-casuale. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>Mazzo da mescolare</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La funzione crea un altro <a class="el" href="structmazzo.html" title="Descrittore del mazzo. ">mazzo</a> di dimensioni uguali a quello in ingresso, dopodichè, per ogni carta del nuovo mazzo, genera casualmente un intero tra 0 e NUM_CARTE_MAZZO che sarà l'indice della carta di m da copiare nel mazzo nuovo. Se la carta è già stata presa, l'indice viene incrementato senza però andare fuori dal mazzo. Infine, il mazzo vecchio viene deallocato e sostituito da quello nuovo. </p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    assert(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL) ;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="structcarta.html">carta</a>* nuovo_mazzo = <span class="keyword">new</span> <a class="code" href="structcarta.html">carta</a>[m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>] ;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>; i++) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordtype">int</span> idx = rand() % m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> ;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">while</span>(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">presa</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            idx = (idx+1) % m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> ;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        nuovo_mazzo[i] = m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx] ;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">presa</a> = <span class="keyword">true</span> ;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="strutt__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a>(<a class="code" href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a>(nuovo_mazzo, <a class="code" href="Briscola_8cc.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a>)) ;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">delete</span> [] m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> ;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> = nuovo_mazzo ;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_a9e8a5b20697e9aa9510b74081f2d4230"><div class="ttname"><a href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a></div><div class="ttdeci">void stampa_mazzo(carta *m, const int n_carte)</div><div class="ttdoc">Stampa informazioni di tutte le carte del mazzo. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:41</div></div>
+<div class="ttc" id="structcarta_html"><div class="ttname"><a href="structcarta.html">carta</a></div><div class="ttdoc">Struttura della singola carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:57</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a975397c373ae2a9dc28d0297fa18da56"><div class="ttname"><a href="strutt__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">D2</a></div><div class="ttdeci">#define D2(a)</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:23</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="structcarta_html_a532a8a4de8cd855924305e845f8084d1"><div class="ttname"><a href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">carta::presa</a></div><div class="ttdeci">bool presa</div><div class="ttdoc">Booleano di supporto alla funzione mescola_mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:61</div></div>
+<div class="ttc" id="Briscola_8cc_html_a1589e772367474f29ad75d55dfa09983"><div class="ttname"><a href="Briscola_8cc.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a></div><div class="ttdeci">const int NUM_CARTE_MAZZO</div><div class="ttdoc">Numero massimo delle carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:38</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0a95ee86b363ad7347e8a85b92fcc8a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void pesca </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>mano</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funzione per pescare dal mazzo. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mano</td><td>Mano del giocatore che deve pescare </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">m</td><td>Mazzo da cui pescare </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    assert(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL &amp;&amp; mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL) ;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    assert(mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> &lt; <a class="code" href="Briscola_8cc.html#a9fc4d5018c6ea43ca79b5ea17d937b32">NUM_CARTE_MANO</a> &amp;&amp; m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> &gt; 0) ;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>++] = m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[--m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>] ;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="Briscola_8cc_html_a9fc4d5018c6ea43ca79b5ea17d937b32"><div class="ttname"><a href="Briscola_8cc.html#a9fc4d5018c6ea43ca79b5ea17d937b32">NUM_CARTE_MANO</a></div><div class="ttdeci">const int NUM_CARTE_MANO</div><div class="ttdoc">Numero massimo delle carte nella mano di un giocatore. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:37</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adaecec29c6fa398991693324bfdeb687"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static bool scegli_carta_p1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>mano</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ALLEGRO_DISPLAY *&#160;</td>
+          <td class="paramname"><em>display</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Scelta della carta da parte dell'utente. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mano</td><td>Mano dell'utente </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">idx</td><td>Indice della carta giocata dall'utente </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">display</td><td>Schermata di allegro del gioco </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>true se l'utente sceglie correttamente il gioco, false se l'utente termina il gioco.</dd></dl>
+<p>La funzione viene chiamata all'interno di <a class="el" href="gestione__gioco_8cc.html#a10533e92f83a3fb27e85f4e067c38901" title="Implementazione del ciclo di gioco. ">start_game</a> per leggere la scelta dell'utente. Ad ogni evento di rilascio del mouse, controlla se ciò avviene sopra ad una carta. In tal caso, viene ritornato in uscita il rispettivo indice dell'array carte della mano. Se invece viene premuto il pulsante di chiusura della finestra, la funzione segnala di chiudere il programma ritornando falso. </p><dl class="section see"><dt>Si veda anche</dt><dd><a class="el" href="gestione__gioco_8cc.html#a10533e92f83a3fb27e85f4e067c38901" title="Implementazione del ciclo di gioco. ">start_game</a>, <a class="el" href="strutt__dati_8h.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce" title="Array di supporto per l&#39;IA, indica quanti &quot;carichi&quot; sono già stati giocati nella partita per ogni sem...">carichi_giocati</a> . </dd></dl>
+<div class="fragment"><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    assert(mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL &amp;&amp; display != NULL) ;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">bool</span> chiusura_forzata=false ;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">/* Preparazione lettura input da mouse e display */</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    ALLEGRO_EVENT_QUEUE *event_queue = al_create_event_queue() ;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    al_register_event_source(event_queue, al_get_mouse_event_source()) ;</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    al_register_event_source(event_queue, al_get_display_event_source(display)) ;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keywordtype">bool</span> done = false ;</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">while</span>(!done) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        ALLEGRO_EVENT event ;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        al_wait_for_event(event_queue, &amp;event) ;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">if</span>(event.type==ALLEGRO_EVENT_MOUSE_BUTTON_UP){</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordtype">int</span> x = <span class="keyword">event</span>.mouse.x ;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keywordtype">int</span> y = <span class="keyword">event</span>.mouse.y ;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordtype">int</span> x_img = <a class="code" href="Briscola_8cc.html#a08d1d465edb86507a3787e00885d4766">x_centro</a> - (mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>*<a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a>)/2 ;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordtype">int</span> y_img = mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[0].<a class="code" href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">y_img</a> ;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; !done &amp;&amp; i&lt;mano.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>; i++) {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                <span class="comment">/* Per ogni carta controllo se il rilascio del</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">                 * mouse è avvenuto all&#39;interno della sua area</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">                 * disegnata sullo schermo</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">                 */</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <span class="keywordflow">if</span>((x&gt;x_img &amp;&amp; x&lt;x_img+<a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a>)&amp;&amp;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                   (y&gt;y_img &amp;&amp; y&lt;y_img+<a class="code" href="Briscola_8cc.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a>)) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                    idx = i ;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    done=true ;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                }</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                x_img += <a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a> ;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        } <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event.type == ALLEGRO_EVENT_DISPLAY_CLOSE) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            chiusura_forzata=true ;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            done=true ;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span>(!chiusura_forzata) {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">/* Nel caso sia giocato un carico, aggiorno la struttura dati</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment">         * carichi_giocati dell&#39;IA.</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment">         */</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="keywordflow">if</span>(mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a>&gt;=10)</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <a class="code" href="Briscola_8cc.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce">carichi_giocati</a>[(int)mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx].<a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a>]++ ;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Carta giocata: &quot;</span>) ;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(<a class="code" href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a>(&amp;mano.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[idx], 1)) ;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    al_destroy_event_queue(event_queue) ;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> !chiusura_forzata ;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
+<div class="ttc" id="structcarta_html_a21f8d34da41412e830ec1355c359cd25"><div class="ttname"><a href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">carta::seme</a></div><div class="ttdeci">semi seme</div><div class="ttdoc">Seme della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:58</div></div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="structcarta_html_ae7bfc8644523c3dae0b8506dbe676242"><div class="ttname"><a href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">carta::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdoc">Punteggio della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:60</div></div>
+<div class="ttc" id="Briscola_8cc_html_aeb0b014e4d7474c1e5f8a5acb53ea7ce"><div class="ttname"><a href="Briscola_8cc.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce">carichi_giocati</a></div><div class="ttdeci">int carichi_giocati[4]</div><div class="ttdoc">Array di supporto per l&#39;IA, indica quanti "carichi" sono già stati giocati nella partita per ogni sem...</div><div class="ttdef"><b>Definition:</b> Briscola.cc:39</div></div>
+<div class="ttc" id="Briscola_8cc_html_ab65e425b405b63d85efa88fc0ed7cd87"><div class="ttname"><a href="Briscola_8cc.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a></div><div class="ttdeci">int imagesHeight</div><div class="ttdoc">Altezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_a9e8a5b20697e9aa9510b74081f2d4230"><div class="ttname"><a href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a></div><div class="ttdeci">void stampa_mazzo(carta *m, const int n_carte)</div><div class="ttdoc">Stampa informazioni di tutte le carte del mazzo. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:41</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="Briscola_8cc_html_a08d1d465edb86507a3787e00885d4766"><div class="ttname"><a href="Briscola_8cc.html#a08d1d465edb86507a3787e00885d4766">x_centro</a></div><div class="ttdeci">const int x_centro</div><div class="ttdoc">Coordinata x del centro della schermata. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:43</div></div>
+<div class="ttc" id="structcarta_html_a0c228212752bcf2088cd3f4159a52ea2"><div class="ttname"><a href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">carta::y_img</a></div><div class="ttdeci">float y_img</div><div class="ttdoc">Coordinate della carta nel tavolo da gioco. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:65</div></div>
+<div class="ttc" id="Briscola_8cc_html_a6d8833bb79aa4a39099eb09cc0e3ba8f"><div class="ttname"><a href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a></div><div class="ttdeci">int imagesWidth</div><div class="ttdoc">Larghezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a330bea9b36f638349fec0d06c8ab4c38"><div class="ttname"><a href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a></div><div class="ttdeci">#define D1(a)</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac252ff024effc9ac82d3b299f1701d77"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void setta_coordinate_carte </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>mano_g1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmazzo.html">mazzo</a> &amp;&#160;</td>
+          <td class="paramname"><em>mano_cpu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setta le coordinate delle carte in mano ai giocatori. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mano_g1</td><td>Mano dell'utente </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mano_cpu</td><td>Mano della CPU</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>La funzione viene invocata all'inizio di ogni turno per settare correttamente le coordinate delle carte nelle mani dei giocatori, così che vengano stampate nella posizione corretta. </p><dl class="section see"><dt>Si veda anche</dt><dd><a class="el" href="grafica__debug_8h.html#a1a9847f8cdbb66cc95c7bd833ea6ba61" title="Stampa il tavolo da gioco. ">disegna_tavolo_gioco</a>, <a class="el" href="gestione__gioco_8cc.html#a10533e92f83a3fb27e85f4e067c38901" title="Implementazione del ciclo di gioco. ">start_game</a>. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;{</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    assert(mano_g1.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL &amp;&amp; mano_cpu.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL) ;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordtype">int</span> x = <a class="code" href="Briscola_8cc.html#a08d1d465edb86507a3787e00885d4766">x_centro</a> - (<a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a>*mano_cpu.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>)/2 ;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keywordtype">int</span> y = 0 ;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mano_cpu.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>; i++) {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        mano_cpu.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i].<a class="code" href="structcarta.html#ab9ce11e268e220716638de1ddb1a7c97">x_img</a> = x ;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        mano_cpu.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i].<a class="code" href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">y_img</a> = y ;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        x += <a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a> ;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    x = <a class="code" href="Briscola_8cc.html#a08d1d465edb86507a3787e00885d4766">x_centro</a> - (<a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a>*mano_g1.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>)/2 ;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    y = <a class="code" href="Briscola_8cc.html#a09b1a702cb937bd648bd709cac02565e">H_DISPLAY</a> - <a class="code" href="Briscola_8cc.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a> ;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;mano_g1.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>; i++) {</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        mano_g1.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i].<a class="code" href="structcarta.html#ab9ce11e268e220716638de1ddb1a7c97">x_img</a> = x ;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        mano_g1.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i].<a class="code" href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">y_img</a> = y ;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        x += <a class="code" href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a> ;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;}</div>
+<div class="ttc" id="structcarta_html_ab9ce11e268e220716638de1ddb1a7c97"><div class="ttname"><a href="structcarta.html#ab9ce11e268e220716638de1ddb1a7c97">carta::x_img</a></div><div class="ttdeci">float x_img</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:65</div></div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="Briscola_8cc_html_ab65e425b405b63d85efa88fc0ed7cd87"><div class="ttname"><a href="Briscola_8cc.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a></div><div class="ttdeci">int imagesHeight</div><div class="ttdoc">Altezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="Briscola_8cc_html_a08d1d465edb86507a3787e00885d4766"><div class="ttname"><a href="Briscola_8cc.html#a08d1d465edb86507a3787e00885d4766">x_centro</a></div><div class="ttdeci">const int x_centro</div><div class="ttdoc">Coordinata x del centro della schermata. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:43</div></div>
+<div class="ttc" id="structcarta_html_a0c228212752bcf2088cd3f4159a52ea2"><div class="ttname"><a href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">carta::y_img</a></div><div class="ttdeci">float y_img</div><div class="ttdoc">Coordinate della carta nel tavolo da gioco. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:65</div></div>
+<div class="ttc" id="Briscola_8cc_html_a09b1a702cb937bd648bd709cac02565e"><div class="ttname"><a href="Briscola_8cc.html#a09b1a702cb937bd648bd709cac02565e">H_DISPLAY</a></div><div class="ttdeci">const int H_DISPLAY</div><div class="ttdoc">Altezza display in pixel. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:42</div></div>
+<div class="ttc" id="Briscola_8cc_html_a6d8833bb79aa4a39099eb09cc0e3ba8f"><div class="ttname"><a href="Briscola_8cc.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a></div><div class="ttdeci">int imagesWidth</div><div class="ttdoc">Larghezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a10533e92f83a3fb27e85f4e067c38901"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool start_game </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structgiocatore.html">giocatore</a> &amp;&#160;</td>
+          <td class="paramname"><em>g1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structgiocatore.html">giocatore</a> &amp;&#160;</td>
+          <td class="paramname"><em>cpu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ALLEGRO_DISPLAY *&#160;</td>
+          <td class="paramname"><em>display</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementazione del ciclo di gioco. </p>
+<dl class="params"><dt>Parametri</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">g1</td><td>Struct giocatore dell'utente </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cpu</td><td>Struct giocatore dell'IA </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">display</td><td>Display corrispondente alla schermata del gioco </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Restituisce</dt><dd>true nel caso il gioco sia finito correttamente, false se l'utente chiude la finestra e non termina la partita</dd></dl>
+<p>La funzione è utilizzata per gestire l'intero ciclo di gioco. Inizializza il mazzo, le mani dei giocatori e la struttura dati di appoggio e gestisce il loop di gioco, il quale consiste nel:</p><ul>
+<li>Pescare</li>
+<li>Ricevere l'input dell'utente per la carta da giocare</li>
+<li>Elaborare la scelta dell'IA</li>
+<li>Valutare il vincitore</li>
+</ul>
+<dl class="section see"><dt>Si veda anche</dt><dd><a class="el" href="gestione__gioco_8cc.html#a93fcff33d95cf1362e2e656c502ac65a" title="Inizializzazione mazzo. ">inizializza_mazzo</a> e <a class="el" href="gestione__gioco_8cc.html#aeb5de1158d18cf4120c4d735954933b8" title="Funzione per mescolare il mazzo in maniera pseudo-casuale. ">mescola_mazzo</a> per la gestione del <a class="el" href="structmazzo.html" title="Descrittore del mazzo. ">mazzo</a>, <a class="el" href="gestione__gioco_8cc.html#ac252ff024effc9ac82d3b299f1701d77" title="Setta le coordinate delle carte in mano ai giocatori. ">setta_coordinate_carte</a> , <a class="el" href="grafica__debug_8h.html#a1a9847f8cdbb66cc95c7bd833ea6ba61" title="Stampa il tavolo da gioco. ">disegna_tavolo_gioco</a> e <a class="el" href="grafica__debug_8h.html#af63d32f69343b73370e6d0432e132407" title="Gestisce le animazioni legate alle carte. ">animazione_carta</a> per la grafica del tavolo, <a class="el" href="gestione__gioco_8cc.html#adaecec29c6fa398991693324bfdeb687" title="Scelta della carta da parte dell&#39;utente. ">scegli_carta_p1</a> per la lettura dell'input dell'utente, <a class="el" href="IA_8h.html#a3ab256b489ced0c725e1725a887bd3a0" title="Implementa l&#39;Intelligenza Artificiale dell&#39;avversario. ">scegli_carta_p2</a> per l'IA e <a class="el" href="grafica__debug_8h.html#a30c77acb97dbf88be4c414b8ad251ff7" title="Disegna la schermata con il risultato finale. ">disegna_schermata_finale</a> per la grafica del risultato della partita. </dd></dl>
+<div class="fragment"><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;{</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    assert(display != NULL &amp;&amp; g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL </div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        &amp;&amp; cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> != NULL)  ;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    </div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="comment">/* Inizializza struttura dati di appoggio al gioco */</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">bool</span> chiusura_forzata = false ;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;4; i++)</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="Briscola_8cc.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce">carichi_giocati</a>[i]=0 ;</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <a class="code" href="structmazzo.html">mazzo</a> m ;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <a class="code" href="gestione__gioco_8cc.html#a93fcff33d95cf1362e2e656c502ac65a">inizializza_mazzo</a>(m) ;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <a class="code" href="gestione__gioco_8cc.html#aeb5de1158d18cf4120c4d735954933b8">mescola_mazzo</a>(m) ;</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">const</span> <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a> briscola = m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[0].<a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a> ;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;L&#39;ultima carta è il &quot;</span> ) ;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(<a class="code" href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a>(&amp;m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[0], 1)) ;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;2; i++) {</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m) ;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <a class="code" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m) ;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">int</span> turno=1 ;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    g1.<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a> = true ;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="comment">/* Loop di gioco */</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordflow">while</span>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> &gt; 0 || cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> &gt; 0) {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Turno &quot;</span>&lt;&lt;turno&lt;&lt;endl&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <span class="comment">/* Il giocatore che ha vinto l&#39;ultima mano pesca per primo */</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <span class="keywordflow">if</span>(m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> &gt; 0) {</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">if</span>(g1.<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a>) {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <a class="code" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m) ;</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                <a class="code" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m) ;</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Gioca prima &quot;</span>&lt;&lt;g1.<a class="code" href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">nome</a>&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                <a class="code" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m) ;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;                <a class="code" href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m) ;</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;                <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Gioca prima &quot;</span>&lt;&lt;cpu.<a class="code" href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">nome</a>&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        </div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <a class="code" href="gestione__gioco_8cc.html#ac252ff024effc9ac82d3b299f1701d77">setta_coordinate_carte</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>) ;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="grafica__debug_8cc.html#a1a9847f8cdbb66cc95c7bd833ea6ba61">disegna_tavolo_gioco</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, m, g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>) ;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">/* Stampe di debug se quest&#39;ultimo è attivo */</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Mano:&quot;</span>&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(<a class="code" href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>, g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>)) ;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Punteggio: &quot;</span>&lt;&lt;g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Briscola:\t&quot;</span>) ;</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(<a class="code" href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a>(&amp;m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[0], 1)) ;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a>(cout&lt;&lt;<span class="stringliteral">&quot;Carte nel mazzo: &quot;</span>&lt;&lt;m.<a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a>&lt;&lt;endl&lt;&lt;endl) ;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <span class="keywordtype">int</span> scelta_p1, scelta_p2 ;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        </div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="comment">/* Scelta carte giocatori */</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="keywordflow">if</span>(g1.<a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a>) {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="gestione__gioco_8cc.html#adaecec29c6fa398991693324bfdeb687">scegli_carta_p1</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p1, display)) {</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;                chiusura_forzata = true ;</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;                break ;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            }</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;            <a class="code" href="grafica__debug_8cc.html#af63d32f69343b73370e6d0432e132407">animazione_carta</a>(g1, cpu, m , g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, scelta_p1) ;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            <a class="code" href="IA_8cc.html#a3ab256b489ced0c725e1725a887bd3a0">scegli_carta_p2</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p2, </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;                &amp;g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[scelta_p1], briscola) ;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            <a class="code" href="grafica__debug_8cc.html#af63d32f69343b73370e6d0432e132407">animazione_carta</a>(cpu, g1, m , g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, scelta_p2) ;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;            </div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;            <a class="code" href="gestione__gioco_8cc.html#a5a1ba2fe8a4e4dda012fe5a6b20b8966">attribuisci_punti</a>(scelta_p1, scelta_p2, &amp;g1, </div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;                &amp;cpu, briscola) ;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;                </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;            <a class="code" href="gestione__gioco_8cc.html#a9c9058cd2b50d777d75040db7f4c8fee">estrai_carta</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p1) ;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;            <a class="code" href="gestione__gioco_8cc.html#a9c9058cd2b50d777d75040db7f4c8fee">estrai_carta</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p2) ;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            <a class="code" href="IA_8cc.html#a3ab256b489ced0c725e1725a887bd3a0">scegli_carta_p2</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p2, NULL, briscola) ;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            <a class="code" href="grafica__debug_8cc.html#af63d32f69343b73370e6d0432e132407">animazione_carta</a>(cpu, g1, m , g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, scelta_p2) ;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;            </div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="gestione__gioco_8cc.html#adaecec29c6fa398991693324bfdeb687">scegli_carta_p1</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p1, display)) {</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;                chiusura_forzata = true ;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;                break ;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;            }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;            <a class="code" href="grafica__debug_8cc.html#af63d32f69343b73370e6d0432e132407">animazione_carta</a>(g1, cpu, m , g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, scelta_p1) ;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;            </div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            <a class="code" href="gestione__gioco_8cc.html#a5a1ba2fe8a4e4dda012fe5a6b20b8966">attribuisci_punti</a>(scelta_p2, scelta_p1, &amp;cpu,</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;                &amp;g1, briscola) ;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;                </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;            <a class="code" href="gestione__gioco_8cc.html#a9c9058cd2b50d777d75040db7f4c8fee">estrai_carta</a>(cpu.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p2) ;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;            <a class="code" href="gestione__gioco_8cc.html#a9c9058cd2b50d777d75040db7f4c8fee">estrai_carta</a>(g1.<a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a>, scelta_p1) ;</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        al_rest(1.0) ;</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        turno++ ;       </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    }</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    <span class="comment">/* Stampa schermata finale */</span></div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    <span class="keywordflow">if</span>(!chiusura_forzata) {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="keywordflow">if</span>(g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a> &gt; cpu.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>)</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            chiusura_forzata=(!<a class="code" href="grafica__debug_8cc.html#a30c77acb97dbf88be4c414b8ad251ff7">disegna_schermata_finale</a>(<a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135">VITTORIA</a>, </div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, display)) ;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a> == cpu.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            chiusura_forzata=(!<a class="code" href="grafica__debug_8cc.html#a30c77acb97dbf88be4c414b8ad251ff7">disegna_schermata_finale</a>(<a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27acc43c4e892558241bce2cc36f0fdd45a">PAREGGIO</a>,</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, display)) ;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            chiusura_forzata=(!<a class="code" href="grafica__debug_8cc.html#a30c77acb97dbf88be4c414b8ad251ff7">disegna_schermata_finale</a>(<a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a8588d4d3e4c7602cd23e40dcfbbf2f30">SCONFITTA</a>,</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;                g1.<a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a>, display)) ;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    }</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code" href="Briscola_8cc.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a>; i++)</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        al_destroy_bitmap(m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a>[i].<a class="code" href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">img</a>) ;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="keyword">delete</span> [] m.<a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> ;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    <span class="keywordflow">return</span> !chiusura_forzata ;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;}</div>
+<div class="ttc" id="structcarta_html_a21f8d34da41412e830ec1355c359cd25"><div class="ttname"><a href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">carta::seme</a></div><div class="ttdeci">semi seme</div><div class="ttdoc">Seme della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:58</div></div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_aeb5de1158d18cf4120c4d735954933b8"><div class="ttname"><a href="gestione__gioco_8cc.html#aeb5de1158d18cf4120c4d735954933b8">mescola_mazzo</a></div><div class="ttdeci">static void mescola_mazzo(mazzo &amp;m)</div><div class="ttdoc">Funzione per mescolare il mazzo in maniera pseudo-casuale. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:84</div></div>
+<div class="ttc" id="structgiocatore_html_a3d7cca54c781be0ba6b258b0dfd4c6de"><div class="ttname"><a href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">giocatore::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:92</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27a8588d4d3e4c7602cd23e40dcfbbf2f30"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a8588d4d3e4c7602cd23e40dcfbbf2f30">SCONFITTA</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_a1a9847f8cdbb66cc95c7bd833ea6ba61"><div class="ttname"><a href="grafica__debug_8cc.html#a1a9847f8cdbb66cc95c7bd833ea6ba61">disegna_tavolo_gioco</a></div><div class="ttdeci">void disegna_tavolo_gioco(const mazzo &amp;mano_g1, const mazzo &amp;mano_cpu, const mazzo &amp;m, const int punteggio)</div><div class="ttdoc">Stampa il tavolo da gioco. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:55</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_a93fcff33d95cf1362e2e656c502ac65a"><div class="ttname"><a href="gestione__gioco_8cc.html#a93fcff33d95cf1362e2e656c502ac65a">inizializza_mazzo</a></div><div class="ttdeci">static void inizializza_mazzo(mazzo &amp;m)</div><div class="ttdoc">Inizializzazione mazzo. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:38</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27acc43c4e892558241bce2cc36f0fdd45a"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27acc43c4e892558241bce2cc36f0fdd45a">PAREGGIO</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="Briscola_8cc_html_aeb0b014e4d7474c1e5f8a5acb53ea7ce"><div class="ttname"><a href="Briscola_8cc.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce">carichi_giocati</a></div><div class="ttdeci">int carichi_giocati[4]</div><div class="ttdoc">Array di supporto per l&#39;IA, indica quanti "carichi" sono già stati giocati nella partita per ogni sem...</div><div class="ttdef"><b>Definition:</b> Briscola.cc:39</div></div>
+<div class="ttc" id="structmazzo_html"><div class="ttname"><a href="structmazzo.html">mazzo</a></div><div class="ttdoc">Descrittore del mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:77</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_a9e8a5b20697e9aa9510b74081f2d4230"><div class="ttname"><a href="grafica__debug_8cc.html#a9e8a5b20697e9aa9510b74081f2d4230">stampa_mazzo</a></div><div class="ttdeci">void stampa_mazzo(carta *m, const int n_carte)</div><div class="ttdoc">Stampa informazioni di tutte le carte del mazzo. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:41</div></div>
+<div class="ttc" id="IA_8cc_html_a3ab256b489ced0c725e1725a887bd3a0"><div class="ttname"><a href="IA_8cc.html#a3ab256b489ced0c725e1725a887bd3a0">scegli_carta_p2</a></div><div class="ttdeci">void scegli_carta_p2(const mazzo &amp;mano, int &amp;idx, carta *c, semi briscola)</div><div class="ttdoc">Implementa l&#39;Intelligenza Artificiale dell&#39;avversario. </div><div class="ttdef"><b>Definition:</b> IA.cc:323</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a></div><div class="ttdeci">semi</div><div class="ttdoc">Tipo seme delle carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="structgiocatore_html_a9d581c75b5bcebfa0a2dfa5b11f75cbd"><div class="ttname"><a href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">giocatore::nome</a></div><div class="ttdeci">char nome[4]</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:90</div></div>
+<div class="ttc" id="Briscola_8cc_html_a1589e772367474f29ad75d55dfa09983"><div class="ttname"><a href="Briscola_8cc.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a></div><div class="ttdeci">const int NUM_CARTE_MAZZO</div><div class="ttdoc">Numero massimo delle carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:38</div></div>
+<div class="ttc" id="structgiocatore_html_acaec9a044006ae41257c0a9333643815"><div class="ttname"><a href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">giocatore::mano</a></div><div class="ttdeci">mazzo mano</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:91</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_adaecec29c6fa398991693324bfdeb687"><div class="ttname"><a href="gestione__gioco_8cc.html#adaecec29c6fa398991693324bfdeb687">scegli_carta_p1</a></div><div class="ttdeci">static bool scegli_carta_p1(const mazzo &amp;mano, int &amp;idx, ALLEGRO_DISPLAY *display)</div><div class="ttdoc">Scelta della carta da parte dell&#39;utente. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:150</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_a5a1ba2fe8a4e4dda012fe5a6b20b8966"><div class="ttname"><a href="gestione__gioco_8cc.html#a5a1ba2fe8a4e4dda012fe5a6b20b8966">attribuisci_punti</a></div><div class="ttdeci">static void attribuisci_punti(const int scelta_p1, const int scelta_p2, giocatore *p1, giocatore *p2, const semi briscola)</div><div class="ttdoc">Attribuisce i punti al vincitore della mano. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:215</div></div>
+<div class="ttc" id="structcarta_html_a6cddeb1efe63b74ab9b554a167987ebd"><div class="ttname"><a href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">carta::img</a></div><div class="ttdeci">ALLEGRO_BITMAP * img</div><div class="ttdoc">Campo contenente l&#39;immagine della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:68</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_a0a95ee86b363ad7347e8a85b92fcc8a5"><div class="ttname"><a href="gestione__gioco_8cc.html#a0a95ee86b363ad7347e8a85b92fcc8a5">pesca</a></div><div class="ttdeci">static void pesca(mazzo &amp;mano, mazzo &amp;m)</div><div class="ttdoc">Funzione per pescare dal mazzo. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:106</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_a30c77acb97dbf88be4c414b8ad251ff7"><div class="ttname"><a href="grafica__debug_8cc.html#a30c77acb97dbf88be4c414b8ad251ff7">disegna_schermata_finale</a></div><div class="ttdeci">bool disegna_schermata_finale(esiti_partita esito, const int punteggio_g1, ALLEGRO_DISPLAY *display)</div><div class="ttdoc">Disegna la schermata con il risultato finale. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:138</div></div>
+<div class="ttc" id="grafica__debug_8cc_html_af63d32f69343b73370e6d0432e132407"><div class="ttname"><a href="grafica__debug_8cc.html#af63d32f69343b73370e6d0432e132407">animazione_carta</a></div><div class="ttdeci">void animazione_carta(giocatore &amp;g1, giocatore &amp;g2, const mazzo &amp;m, const int punteggio, const int idx)</div><div class="ttdoc">Gestisce le animazioni legate alle carte. </div><div class="ttdef"><b>Definition:</b> grafica_debug.cc:105</div></div>
+<div class="ttc" id="structgiocatore_html_ad3593e6e52d7ec2d6158fafcdefa177f"><div class="ttname"><a href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">giocatore::ultima_presa</a></div><div class="ttdeci">bool ultima_presa</div><div class="ttdoc">Booleano di supporto alla funizione start_game, indica se il giocatore ha vinto l&#39;ultima mano...</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:93</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135">VITTORIA</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_ac252ff024effc9ac82d3b299f1701d77"><div class="ttname"><a href="gestione__gioco_8cc.html#ac252ff024effc9ac82d3b299f1701d77">setta_coordinate_carte</a></div><div class="ttdeci">static void setta_coordinate_carte(mazzo &amp;mano_g1, mazzo &amp;mano_cpu)</div><div class="ttdoc">Setta le coordinate delle carte in mano ai giocatori. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:262</div></div>
+<div class="ttc" id="gestione__gioco_8cc_html_a9c9058cd2b50d777d75040db7f4c8fee"><div class="ttname"><a href="gestione__gioco_8cc.html#a9c9058cd2b50d777d75040db7f4c8fee">estrai_carta</a></div><div class="ttdeci">static void estrai_carta(mazzo &amp;mano, const int indice)</div><div class="ttdoc">Funzione per estrarre una carta dalla mano. </div><div class="ttdef"><b>Definition:</b> gestione_gioco.cc:124</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a330bea9b36f638349fec0d06c8ab4c38"><div class="ttname"><a href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">D1</a></div><div class="ttdeci">#define D1(a)</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:22</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Mar 2 Feb 2016 10:46:29 per Briscola da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

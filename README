@@ -1,0 +1,26 @@
+Briscola è un'implementazione del calssico gioco della Briscola. Ti permette di
+giocare 1vs1 contro la CPU.
+Autore: Simone Richetti.
+
+Per navigare la documentazione del programma, aprire con un browser il file
+"doc/html/index.html".
+
+GUIDA ALL'INSTALLAZIONE
+Il programma ha bisogno della libreria grafica Allegro5 per funzionare. Può essere
+installata in 2 modi:
+
+1. Utilizzando i pacchetti (Consigliato
+Apri il terminale, e digita il seguente comando:
+
+$ sudo apt-get install liballegro5.0 liballegro5-dev liballegro-ttf5-dev liballegro-image5-dev
+
+2. Utilzzando i file contenuti nella cartella lib
+Prendere i diritti di root. Quindi:
+-creare una cartella di nome "allegro5" nella directory "/usr/include". Quindi,
+ copiare i file contenuti nella cartella "lib/include" dell'archivio nella cartella
+ appena creata.
+-creare una cartella di nome "allegro5" nella directory "/usr/include/x86_64-linux-gnu".
+ Quindi, copiare i file contenuti nella cartella "lib/x86_64-linux-gnu" dell'archivio nella cartella
+ appena creata.
+-copiare i file contenuti nella cartella "lib/so" dell'archivio nella cartella
+ "usr/lib".

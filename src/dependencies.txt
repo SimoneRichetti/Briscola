@@ -1,0 +1,4 @@
+Briscola.o: Briscola.cc strutt_dati.h grafica_debug.h gestione_gioco.h
+IA.o: IA.cc strutt_dati.h grafica_debug.h
+gestione_gioco.o: gestione_gioco.cc strutt_dati.h grafica_debug.h IA.h
+grafica_debug.o: grafica_debug.cc strutt_dati.h

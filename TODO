@@ -1,0 +1,6 @@
+-Animazione pesca
+-Carte più grandi
+-Sistemare disegna_tavolo_gioco (ridisegnare carta giocata per ultima così che
+ vada sopra le altre)
+-Sistemare scegli_carta_g1(nel for in cui si controllano le coordinate del mouse,
+ utilizzare mano.carte[i].x/y_img)

@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Briscola:  File sorgente strutt_dati.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Briscola
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Pagina&#160;Principale</span></a></li>
+      <li><a href="annotated.html"><span>Classi</span></a></li>
+      <li class="current"><a href="files.html"><span>File</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Cerca" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Elenco&#160;dei&#160;file</span></a></li>
+      <li><a href="globals.html"><span>Elementi&#160;dei&#160;file</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tutto</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classi</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>File</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funzioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variabili</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Tipi enumerati (enum)</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Valori del tipo enumerato</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Definizioni</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Pagine</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">strutt_dati.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="strutt__dati_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifdef DEBUG_MODE</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define DBG(A, B) { if((A) &amp; MASK) { B; } }</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#a8de3ed741dadc9c979a4ff17c0a9116e">   17</a></span>&#160;<span class="preprocessor">#define NDEBUG</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#a9fd176efd6d22cb809550f0271c2a93d">   18</a></span>&#160;<span class="preprocessor">#define DBG(A, B)</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#a330bea9b36f638349fec0d06c8ab4c38">   22</a></span>&#160;<span class="preprocessor">#define D1(a) DBG(1, a)</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#a975397c373ae2a9dc28d0297fa18da56">   23</a></span>&#160;<span class="preprocessor">#define D2(a) DBG(2, a)</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/* Inizio header del modulo Struttura Dati */</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d">   33</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a> { <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a9b01b11abd699c4992b9366c2b2b5f69">DENARI</a>=0, <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83ab54e5dd571f6a8cf5bde9f982382a358">COPPE</a>, <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a43f03efdeb029f8140a3739da5a6e47a">BASTONI</a>, <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d">SPADE</a> } ;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70">   43</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70">tipi_carta</a> { <a class="code" href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a7850a78c35867f48b399b2a21c0f5ec7">BRISCOLA</a>, <a class="code" href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a71b45454aa340376b46613a4318b4b23">CARICO</a>, <a class="code" href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a788f427c031562f57065305ba6d392da">BRISCOLA_E_CARICO</a>, <a class="code" href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a96b6018b7cee17728b4c719124264d73">LISCIO</a> } ;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135">   48</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27">esiti_partita</a> { <a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135">VITTORIA</a>, <a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27acc43c4e892558241bce2cc36f0fdd45a">PAREGGIO</a>, <a class="code" href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a8588d4d3e4c7602cd23e40dcfbbf2f30">SCONFITTA</a> } ;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="structcarta.html">   57</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcarta.html">carta</a> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">   58</a></span>&#160;    <a class="code" href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a> <a class="code" href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">seme</a> ; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structcarta.html#a761de9c1928084edf4a75d0e55146652">   59</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcarta.html#a761de9c1928084edf4a75d0e55146652">numero</a> ; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">punteggio</a> ; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">   61</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">presa</a> ; </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="structcarta.html#a3731ab6042e322500e1abd4cbbd7e92e">   62</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structcarta.html#a3731ab6042e322500e1abd4cbbd7e92e">giocata</a> ; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">   65</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structcarta.html#ab9ce11e268e220716638de1ddb1a7c97">x_img</a>, <a class="code" href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">y_img</a> ; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">   68</a></span>&#160;    ALLEGRO_BITMAP *<a class="code" href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">img</a> ; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} ;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structmazzo.html">   77</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structmazzo.html">mazzo</a> {</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">   78</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">num_carte</a> ; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">   79</a></span>&#160;    <a class="code" href="structcarta.html">carta</a>* <a class="code" href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">carte</a> ; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;} ;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structgiocatore.html">   89</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structgiocatore.html">giocatore</a> {</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">   90</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">nome</a>[4] ;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">   91</a></span>&#160;    <a class="code" href="structmazzo.html">mazzo</a> <a class="code" href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">mano</a> ;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">   92</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">punteggio</a> ;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">   93</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">ultima_presa</a> ; </div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="structgiocatore.html#ada47a0d73f68302e7b14b387ae7eea50">   96</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structgiocatore.html#ada47a0d73f68302e7b14b387ae7eea50">utente</a> ; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structgiocatore.html#a29c0a92dab16dccdca6ebc19d2e244cd">   99</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structgiocatore.html#af2699ec110179123a94c4cc4af349564">x_giocata</a>, <a class="code" href="structgiocatore.html#a29c0a92dab16dccdca6ebc19d2e244cd">y_giocata</a> ; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} ;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a9fc4d5018c6ea43ca79b5ea17d937b32">NUM_CARTE_MANO</a> ; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a> ; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce">carichi_giocati</a>[4] ; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a497b7de55f41e4e62ad2dbfb64c4f75b">W_DISPLAY</a> ; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a09b1a702cb937bd648bd709cac02565e">H_DISPLAY</a> ; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a08d1d465edb86507a3787e00885d4766">x_centro</a> ; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#adf9d163911c930606a9e68c3e798ebec">y_centro</a> ; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a1ae08ef4762853a2b0558cc923adc379">dx</a>, <a class="code" href="strutt__dati_8h.html#a013a3da6b7e834b6aa268f80dabbb215">dy</a> ; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#ac6a104e8b36de371a52e0f2f7d70835c">x_gioca_dx</a>, <a class="code" href="strutt__dati_8h.html#ac54f003241f5b19acd022a719218f430">x_gioca_sx</a>, </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;         <a class="code" href="strutt__dati_8h.html#a3fa84205069b105f0dc644fb34816927">y_gioca_down</a>, <a class="code" href="strutt__dati_8h.html#ad763cd3a9a42c41e4e8a01b620378ee0">y_gioca_up</a> ; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a720f99fe7ae13726faacb75a163d2973">x_esci_dx</a>, <a class="code" href="strutt__dati_8h.html#a9b79d4471a9e47e2a88ad4d832660843">x_esci_sx</a>, </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;         <a class="code" href="strutt__dati_8h.html#a637a37915d496ca2412053330f317858">y_esci_down</a>, <a class="code" href="strutt__dati_8h.html#a3a8423ca7267ae4583c40c9c1f595412">y_esci_up</a> ; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a461ccca3cee6c21972db591fa2af7d08">x_continua_dx</a>, <a class="code" href="strutt__dati_8h.html#ab11cce1490bf81d1e792acad8d217abc">x_continua_sx</a>, </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;         <a class="code" href="strutt__dati_8h.html#a1e01eded62e6bde615cbbd95ebf7ec4a">y_continua_down</a>, <a class="code" href="strutt__dati_8h.html#a8cafc0aa4dd7407474500c95bc20ddac">y_continua_up</a> ; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#ae222434adb63e6bf7b36df2d9e3cf80e">X_GIOCATA_CPU</a>, <a class="code" href="strutt__dati_8h.html#a1d6d99cde53f302a0be0dc01fcc7f4ce">X_GIOCATA_G1</a> ; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">int</span> <a class="code" href="strutt__dati_8h.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a>,   </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;       <a class="code" href="strutt__dati_8h.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a> ; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keyword">extern</span> ALLEGRO_BITMAP *<a class="code" href="strutt__dati_8h.html#aa7502968cf79b8efbfd0d0e6c23ac877">img_retro</a> ; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">extern</span> ALLEGRO_FONT *<a class="code" href="strutt__dati_8h.html#a06a6b6b80431ecbe16a494a93350251b">agentorange</a> ; </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keyword">extern</span> ALLEGRO_FONT *<a class="code" href="strutt__dati_8h.html#a90858a1ed93dba97baaf95abc1ca08bf">bebasneue</a> ; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">/* Fine header modulo Struttura Dati */</span></div>
+<div class="ttc" id="strutt__dati_8h_html_a497b7de55f41e4e62ad2dbfb64c4f75b"><div class="ttname"><a href="strutt__dati_8h.html#a497b7de55f41e4e62ad2dbfb64c4f75b">W_DISPLAY</a></div><div class="ttdeci">const int W_DISPLAY</div><div class="ttdoc">Larghezza display in pixel. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:41</div></div>
+<div class="ttc" id="structcarta_html_a21f8d34da41412e830ec1355c359cd25"><div class="ttname"><a href="structcarta.html#a21f8d34da41412e830ec1355c359cd25">carta::seme</a></div><div class="ttdeci">semi seme</div><div class="ttdoc">Seme della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:58</div></div>
+<div class="ttc" id="strutt__dati_8h_html_aeb0b014e4d7474c1e5f8a5acb53ea7ce"><div class="ttname"><a href="strutt__dati_8h.html#aeb0b014e4d7474c1e5f8a5acb53ea7ce">carichi_giocati</a></div><div class="ttdeci">int carichi_giocati[4]</div><div class="ttdoc">Array di supporto per l&#39;IA, indica quanti "carichi" sono già stati giocati nella partita per ogni sem...</div><div class="ttdef"><b>Definition:</b> Briscola.cc:39</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a9b79d4471a9e47e2a88ad4d832660843"><div class="ttname"><a href="strutt__dati_8h.html#a9b79d4471a9e47e2a88ad4d832660843">x_esci_sx</a></div><div class="ttdeci">const int x_esci_sx</div><div class="ttdoc">Coordinate x del pulsante "ESCI" nella schermata principale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:51</div></div>
+<div class="ttc" id="structcarta_html_ab9ce11e268e220716638de1ddb1a7c97"><div class="ttname"><a href="structcarta.html#ab9ce11e268e220716638de1ddb1a7c97">carta::x_img</a></div><div class="ttdeci">float x_img</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:65</div></div>
+<div class="ttc" id="structmazzo_html_a6d3982890f309fb6b3044c48c61a2fc4"><div class="ttname"><a href="structmazzo.html#a6d3982890f309fb6b3044c48c61a2fc4">mazzo::num_carte</a></div><div class="ttdeci">int num_carte</div><div class="ttdoc">Numero massimo di carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:78</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ab65e425b405b63d85efa88fc0ed7cd87"><div class="ttname"><a href="strutt__dati_8h.html#ab65e425b405b63d85efa88fc0ed7cd87">imagesHeight</a></div><div class="ttdeci">int imagesHeight</div><div class="ttdoc">Altezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+<div class="ttc" id="structcarta_html_ae7bfc8644523c3dae0b8506dbe676242"><div class="ttname"><a href="structcarta.html#ae7bfc8644523c3dae0b8506dbe676242">carta::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdoc">Punteggio della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:60</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad763cd3a9a42c41e4e8a01b620378ee0"><div class="ttname"><a href="strutt__dati_8h.html#ad763cd3a9a42c41e4e8a01b620378ee0">y_gioca_up</a></div><div class="ttdeci">const int y_gioca_up</div><div class="ttdoc">Coordinate y del pulsante "GIOCA" nella schermata principale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:49</div></div>
+<div class="ttc" id="strutt__dati_8h_html_afb75f2d6e5e4fa1ec56afe5ea4229f70a788f427c031562f57065305ba6d392da"><div class="ttname"><a href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a788f427c031562f57065305ba6d392da">BRISCOLA_E_CARICO</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:43</div></div>
+<div class="ttc" id="structgiocatore_html_a3d7cca54c781be0ba6b258b0dfd4c6de"><div class="ttname"><a href="structgiocatore.html#a3d7cca54c781be0ba6b258b0dfd4c6de">giocatore::punteggio</a></div><div class="ttdeci">int punteggio</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:92</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27a8588d4d3e4c7602cd23e40dcfbbf2f30"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a8588d4d3e4c7602cd23e40dcfbbf2f30">SCONFITTA</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a3a8423ca7267ae4583c40c9c1f595412"><div class="ttname"><a href="strutt__dati_8h.html#a3a8423ca7267ae4583c40c9c1f595412">y_esci_up</a></div><div class="ttdeci">const int y_esci_up</div><div class="ttdoc">Coordinate y del pulsante "ESCI" nella schermata principale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:53</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a1ae08ef4762853a2b0558cc923adc379"><div class="ttname"><a href="strutt__dati_8h.html#a1ae08ef4762853a2b0558cc923adc379">dx</a></div><div class="ttdeci">const int dx</div><div class="ttdef"><b>Definition:</b> Briscola.cc:45</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a3fa84205069b105f0dc644fb34816927"><div class="ttname"><a href="strutt__dati_8h.html#a3fa84205069b105f0dc644fb34816927">y_gioca_down</a></div><div class="ttdeci">const int y_gioca_down</div><div class="ttdef"><b>Definition:</b> Briscola.cc:50</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27acc43c4e892558241bce2cc36f0fdd45a"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27acc43c4e892558241bce2cc36f0fdd45a">PAREGGIO</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="strutt__dati_8h_html_afb75f2d6e5e4fa1ec56afe5ea4229f70a96b6018b7cee17728b4c719124264d73"><div class="ttname"><a href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a96b6018b7cee17728b4c719124264d73">LISCIO</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:43</div></div>
+<div class="ttc" id="structgiocatore_html_ada47a0d73f68302e7b14b387ae7eea50"><div class="ttname"><a href="structgiocatore.html#ada47a0d73f68302e7b14b387ae7eea50">giocatore::utente</a></div><div class="ttdeci">bool utente</div><div class="ttdoc">Indica se il giocatore è comandato dall&#39;utente o dall&#39;IA. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:96</div></div>
+<div class="ttc" id="structmazzo_html"><div class="ttname"><a href="structmazzo.html">mazzo</a></div><div class="ttdoc">Descrittore del mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:77</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a09b1a702cb937bd648bd709cac02565e"><div class="ttname"><a href="strutt__dati_8h.html#a09b1a702cb937bd648bd709cac02565e">H_DISPLAY</a></div><div class="ttdeci">const int H_DISPLAY</div><div class="ttdoc">Altezza display in pixel. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:42</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a637a37915d496ca2412053330f317858"><div class="ttname"><a href="strutt__dati_8h.html#a637a37915d496ca2412053330f317858">y_esci_down</a></div><div class="ttdeci">const int y_esci_down</div><div class="ttdef"><b>Definition:</b> Briscola.cc:54</div></div>
+<div class="ttc" id="structcarta_html"><div class="ttname"><a href="structcarta.html">carta</a></div><div class="ttdoc">Struttura della singola carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:57</div></div>
+<div class="ttc" id="structmazzo_html_af37c46aa313e90bf6b514a83bab8fd9b"><div class="ttname"><a href="structmazzo.html#af37c46aa313e90bf6b514a83bab8fd9b">mazzo::carte</a></div><div class="ttdeci">carta * carte</div><div class="ttdoc">Puntatore all&#39;array dinamico di carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:79</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83ab54e5dd571f6a8cf5bde9f982382a358"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83ab54e5dd571f6a8cf5bde9f982382a358">COPPE</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83">semi</a></div><div class="ttdeci">semi</div><div class="ttdoc">Tipo seme delle carte. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ac6a104e8b36de371a52e0f2f7d70835c"><div class="ttname"><a href="strutt__dati_8h.html#ac6a104e8b36de371a52e0f2f7d70835c">x_gioca_dx</a></div><div class="ttdeci">const int x_gioca_dx</div><div class="ttdef"><b>Definition:</b> Briscola.cc:48</div></div>
+<div class="ttc" id="structgiocatore_html_a29c0a92dab16dccdca6ebc19d2e244cd"><div class="ttname"><a href="structgiocatore.html#a29c0a92dab16dccdca6ebc19d2e244cd">giocatore::y_giocata</a></div><div class="ttdeci">int y_giocata</div><div class="ttdoc">Coordinate x e y del punto del campo di gioco in cui le carte del giocatore devono essere giocate...</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:99</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a6d8833bb79aa4a39099eb09cc0e3ba8f"><div class="ttname"><a href="strutt__dati_8h.html#a6d8833bb79aa4a39099eb09cc0e3ba8f">imagesWidth</a></div><div class="ttdeci">int imagesWidth</div><div class="ttdoc">Larghezza in pixel dei bitmap caricati per le immagini delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:61</div></div>
+<div class="ttc" id="structgiocatore_html_a9d581c75b5bcebfa0a2dfa5b11f75cbd"><div class="ttname"><a href="structgiocatore.html#a9d581c75b5bcebfa0a2dfa5b11f75cbd">giocatore::nome</a></div><div class="ttdeci">char nome[4]</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:90</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27">esiti_partita</a></div><div class="ttdeci">esiti_partita</div><div class="ttdoc">Esito della partita. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="structgiocatore_html_af2699ec110179123a94c4cc4af349564"><div class="ttname"><a href="structgiocatore.html#af2699ec110179123a94c4cc4af349564">giocatore::x_giocata</a></div><div class="ttdeci">int x_giocata</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:99</div></div>
+<div class="ttc" id="structcarta_html_a532a8a4de8cd855924305e845f8084d1"><div class="ttname"><a href="structcarta.html#a532a8a4de8cd855924305e845f8084d1">carta::presa</a></div><div class="ttdeci">bool presa</div><div class="ttdoc">Booleano di supporto alla funzione mescola_mazzo. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:61</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a08d1d465edb86507a3787e00885d4766"><div class="ttname"><a href="strutt__dati_8h.html#a08d1d465edb86507a3787e00885d4766">x_centro</a></div><div class="ttdeci">const int x_centro</div><div class="ttdoc">Coordinata x del centro della schermata. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:43</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83a43f03efdeb029f8140a3739da5a6e47a"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a43f03efdeb029f8140a3739da5a6e47a">BASTONI</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="structgiocatore_html_acaec9a044006ae41257c0a9333643815"><div class="ttname"><a href="structgiocatore.html#acaec9a044006ae41257c0a9333643815">giocatore::mano</a></div><div class="ttdeci">mazzo mano</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:91</div></div>
+<div class="ttc" id="structcarta_html_a0c228212752bcf2088cd3f4159a52ea2"><div class="ttname"><a href="structcarta.html#a0c228212752bcf2088cd3f4159a52ea2">carta::y_img</a></div><div class="ttdeci">float y_img</div><div class="ttdoc">Coordinate della carta nel tavolo da gioco. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:65</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ae222434adb63e6bf7b36df2d9e3cf80e"><div class="ttname"><a href="strutt__dati_8h.html#ae222434adb63e6bf7b36df2d9e3cf80e">X_GIOCATA_CPU</a></div><div class="ttdeci">const int X_GIOCATA_CPU</div><div class="ttdef"><b>Definition:</b> Briscola.cc:60</div></div>
+<div class="ttc" id="structcarta_html_a6cddeb1efe63b74ab9b554a167987ebd"><div class="ttname"><a href="structcarta.html#a6cddeb1efe63b74ab9b554a167987ebd">carta::img</a></div><div class="ttdeci">ALLEGRO_BITMAP * img</div><div class="ttdoc">Campo contenente l&#39;immagine della carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:68</div></div>
+<div class="ttc" id="structcarta_html_a3731ab6042e322500e1abd4cbbd7e92e"><div class="ttname"><a href="structcarta.html#a3731ab6042e322500e1abd4cbbd7e92e">carta::giocata</a></div><div class="ttdeci">bool giocata</div><div class="ttdoc">Booleano di supporto alla funzione disegna_tavolo_gioco. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:62</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a8cafc0aa4dd7407474500c95bc20ddac"><div class="ttname"><a href="strutt__dati_8h.html#a8cafc0aa4dd7407474500c95bc20ddac">y_continua_up</a></div><div class="ttdeci">const int y_continua_up</div><div class="ttdoc">Coordinate y del pulsante "CONTINUA" nella schermata finale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:57</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a1d6d99cde53f302a0be0dc01fcc7f4ce"><div class="ttname"><a href="strutt__dati_8h.html#a1d6d99cde53f302a0be0dc01fcc7f4ce">X_GIOCATA_G1</a></div><div class="ttdeci">const int X_GIOCATA_G1</div><div class="ttdoc">Coordinate x delle posizioni in cui verranno giocate le carte dell&#39;utente e della CPU...</div><div class="ttdef"><b>Definition:</b> Briscola.cc:59</div></div>
+<div class="ttc" id="structcarta_html_a761de9c1928084edf4a75d0e55146652"><div class="ttname"><a href="structcarta.html#a761de9c1928084edf4a75d0e55146652">carta::numero</a></div><div class="ttdeci">int numero</div><div class="ttdoc">Numero della carta, da 1 a 10. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:59</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ac54f003241f5b19acd022a719218f430"><div class="ttname"><a href="strutt__dati_8h.html#ac54f003241f5b19acd022a719218f430">x_gioca_sx</a></div><div class="ttdeci">const int x_gioca_sx</div><div class="ttdoc">Coordinate x del pulsante "GIOCA" nella schermata principale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:47</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a2808784edc7a2b2e5a53e8ac7b625a3d">SPADE</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a1589e772367474f29ad75d55dfa09983"><div class="ttname"><a href="strutt__dati_8h.html#a1589e772367474f29ad75d55dfa09983">NUM_CARTE_MAZZO</a></div><div class="ttdeci">const int NUM_CARTE_MAZZO</div><div class="ttdoc">Numero massimo delle carte nel mazzo. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:38</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a90858a1ed93dba97baaf95abc1ca08bf"><div class="ttname"><a href="strutt__dati_8h.html#a90858a1ed93dba97baaf95abc1ca08bf">bebasneue</a></div><div class="ttdeci">ALLEGRO_FONT * bebasneue</div><div class="ttdoc">Font utilizzato nelle scritte all&#39;interno dei pulsanti. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:65</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a401d9bb2ef31941ba80d29c1a33f9d83a9b01b11abd699c4992b9366c2b2b5f69"><div class="ttname"><a href="strutt__dati_8h.html#a401d9bb2ef31941ba80d29c1a33f9d83a9b01b11abd699c4992b9366c2b2b5f69">DENARI</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:33</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ab11cce1490bf81d1e792acad8d217abc"><div class="ttname"><a href="strutt__dati_8h.html#ab11cce1490bf81d1e792acad8d217abc">x_continua_sx</a></div><div class="ttdeci">const int x_continua_sx</div><div class="ttdoc">Coordinate x del pulsante "CONTINUA" nella schermata finale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:55</div></div>
+<div class="ttc" id="strutt__dati_8h_html_adf9d163911c930606a9e68c3e798ebec"><div class="ttname"><a href="strutt__dati_8h.html#adf9d163911c930606a9e68c3e798ebec">y_centro</a></div><div class="ttdeci">const int y_centro</div><div class="ttdoc">Coordinata y del centro della schermata. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:44</div></div>
+<div class="ttc" id="strutt__dati_8h_html_afb75f2d6e5e4fa1ec56afe5ea4229f70"><div class="ttname"><a href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70">tipi_carta</a></div><div class="ttdeci">tipi_carta</div><div class="ttdoc">Tipologia di carta. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:43</div></div>
+<div class="ttc" id="structgiocatore_html_ad3593e6e52d7ec2d6158fafcdefa177f"><div class="ttname"><a href="structgiocatore.html#ad3593e6e52d7ec2d6158fafcdefa177f">giocatore::ultima_presa</a></div><div class="ttdeci">bool ultima_presa</div><div class="ttdoc">Booleano di supporto alla funizione start_game, indica se il giocatore ha vinto l&#39;ultima mano...</div><div class="ttdef"><b>Definition:</b> strutt_dati.h:93</div></div>
+<div class="ttc" id="strutt__dati_8h_html_ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135"><div class="ttname"><a href="strutt__dati_8h.html#ad23fdc92daaccb2cc945cb627dfded27a6cc528714979dd82463b091b547d7135">VITTORIA</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:48</div></div>
+<div class="ttc" id="structgiocatore_html"><div class="ttname"><a href="structgiocatore.html">giocatore</a></div><div class="ttdoc">Struttura per descrivere un giocatore. </div><div class="ttdef"><b>Definition:</b> strutt_dati.h:89</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a06a6b6b80431ecbe16a494a93350251b"><div class="ttname"><a href="strutt__dati_8h.html#a06a6b6b80431ecbe16a494a93350251b">agentorange</a></div><div class="ttdeci">ALLEGRO_FONT * agentorange</div><div class="ttdoc">Font utilizzato nella schermata principale. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:64</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a1e01eded62e6bde615cbbd95ebf7ec4a"><div class="ttname"><a href="strutt__dati_8h.html#a1e01eded62e6bde615cbbd95ebf7ec4a">y_continua_down</a></div><div class="ttdeci">const int y_continua_down</div><div class="ttdef"><b>Definition:</b> Briscola.cc:58</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a461ccca3cee6c21972db591fa2af7d08"><div class="ttname"><a href="strutt__dati_8h.html#a461ccca3cee6c21972db591fa2af7d08">x_continua_dx</a></div><div class="ttdeci">const int x_continua_dx</div><div class="ttdef"><b>Definition:</b> Briscola.cc:56</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a013a3da6b7e834b6aa268f80dabbb215"><div class="ttname"><a href="strutt__dati_8h.html#a013a3da6b7e834b6aa268f80dabbb215">dy</a></div><div class="ttdeci">const int dy</div><div class="ttdoc">Frazioni di schermo utilizzate per determinare la grandezza dei bottoni e le spaziature tra di essi...</div><div class="ttdef"><b>Definition:</b> Briscola.cc:46</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a720f99fe7ae13726faacb75a163d2973"><div class="ttname"><a href="strutt__dati_8h.html#a720f99fe7ae13726faacb75a163d2973">x_esci_dx</a></div><div class="ttdeci">const int x_esci_dx</div><div class="ttdef"><b>Definition:</b> Briscola.cc:52</div></div>
+<div class="ttc" id="strutt__dati_8h_html_afb75f2d6e5e4fa1ec56afe5ea4229f70a71b45454aa340376b46613a4318b4b23"><div class="ttname"><a href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a71b45454aa340376b46613a4318b4b23">CARICO</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:43</div></div>
+<div class="ttc" id="strutt__dati_8h_html_aa7502968cf79b8efbfd0d0e6c23ac877"><div class="ttname"><a href="strutt__dati_8h.html#aa7502968cf79b8efbfd0d0e6c23ac877">img_retro</a></div><div class="ttdeci">ALLEGRO_BITMAP * img_retro</div><div class="ttdoc">Bitmap contenente il retro delle carte. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:63</div></div>
+<div class="ttc" id="strutt__dati_8h_html_a9fc4d5018c6ea43ca79b5ea17d937b32"><div class="ttname"><a href="strutt__dati_8h.html#a9fc4d5018c6ea43ca79b5ea17d937b32">NUM_CARTE_MANO</a></div><div class="ttdeci">const int NUM_CARTE_MANO</div><div class="ttdoc">Numero massimo delle carte nella mano di un giocatore. </div><div class="ttdef"><b>Definition:</b> Briscola.cc:37</div></div>
+<div class="ttc" id="strutt__dati_8h_html_afb75f2d6e5e4fa1ec56afe5ea4229f70a7850a78c35867f48b399b2a21c0f5ec7"><div class="ttname"><a href="strutt__dati_8h.html#afb75f2d6e5e4fa1ec56afe5ea4229f70a7850a78c35867f48b399b2a21c0f5ec7">BRISCOLA</a></div><div class="ttdef"><b>Definition:</b> strutt_dati.h:43</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato Mar 2 Feb 2016 10:46:29 per Briscola da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>
